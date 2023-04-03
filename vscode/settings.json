@@ -1,0 +1,96 @@
+{
+    // EDITOR CUSTOMIZATION
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tokenColorCustomizations": {
+      "[Kay Dark]": {
+        "textMateRules": [
+          {
+            "scope": [
+              "storage.type.js",
+              "storage.type.function.js",
+              "entity.name.tag.html",
+              "storage.type.class.python",
+              "storage.type.function.python"
+            ],
+            "settings": {
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": [
+              "meta.definition.variable.js",
+              "variable.other.constant.js",
+              "entity.name.type.class.python"
+            ],
+            "settings": {
+              "foreground": "#CDCDCD"
+            }
+          },
+          {
+            "scope": [
+              "keyword.control.conditional.js",
+              "support.type.property-name.table.toml"
+            ],
+            "settings": {
+              "foreground": "#FF4A98",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": "keyword.control.flow.js",
+            "settings": {
+              "foreground": "#cf9355",
+              "fontStyle": "bold"
+            }
+          }
+        ]
+      }
+    },
+    // FILES CUSTOMIZATION
+    "files.insertFinalNewline": true,
+    // WORKBENCH CUSTOMIZATION
+    "workbench.colorTheme": "Kay Dark",
+    "workbench.iconTheme": "symbols",
+    "workbench.colorCustomizations": {
+      "badge.background": "#4cbc88",
+      "activityBarBadge.background": "#4cbc88",
+      "editor.background": "#1a1a1a",
+      "editorGutter.background": "#1a1a1a",
+      "sideBar.background": "#1a1a1a",
+      "tab.activeForeground": "#4cbc88",
+      "tab.activeBorder": "#4cbc88",
+      "statusBarItem.remoteBackground": "#4cbc88",
+      "statusBarItem.remoteForeground": "#1a1a1a",
+      "list.activeSelectionForeground": "#4cbc88",
+      "list.inactiveSelectionForeground": "#8b888f",
+      "statusBar.background": "#3f9e72"
+    },
+    "workbench.editorAssociations": {
+      "git-rebase-todo": "default"
+    },
+    // PYTHON CUSTOMIZATION
+    "python.formatting.provider": "black",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.terminal.activateEnvironment": false,
+    // YAML CUSTOMIZATION
+    "redhat.telemetry.enabled": false,
+    // GITLENS CUSTOMIZATION
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    // JUPYTER CUSTOMIZATION
+    "jupyter.askForKernelRestart": false,
+    // TERMINAL CUSTOMIZATION
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "code-runner.runInTerminal": true
+  }
+  
