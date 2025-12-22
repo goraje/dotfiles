@@ -1,0 +1,16 @@
+themes {
+    panda {
+        fg "#E6E6E6"
+        bg "#292A2B"
+        black "#292A2B"
+        red "#FF2C6D"
+        green "#19F9D8"
+        yellow "#FFB86C"
+        blue "#45A9F9"
+        magenta "#FF75B5"
+        cyan "#67D3C2"
+        white "#E6E6E6"
+        orange "#FF9E64"
+    }
+}
+

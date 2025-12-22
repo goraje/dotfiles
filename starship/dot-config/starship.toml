@@ -6,3 +6,7 @@ disabled = true
 
 [package]
 disabled = true
+
+[battery]
+disabled = true
+
