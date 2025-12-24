@@ -24,6 +24,10 @@ set -gx LSCOLORS GxExFxgxFxDxgxFxFxGxGx
 set -gx EDITOR vim
 set -gx fish_greeting ""
 
+if status is-interactive; and command -q fzf
+    fzf --fish | source
+end
+
 if status is-interactive; and command -q brew
 	brew shellenv | source
 end

@@ -13,13 +13,16 @@
     "metrics": false,
   },
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_size": 18,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Kay",
+    "dark": "Kay Blurred",
   },
   "features": {
     "edit_prediction_provider": "copilot",
   },
+  "vim_mode": true,
 }
