@@ -7,6 +7,8 @@
   "custom-ui-style.electron": {
     "frame": false
   },
+  "custom-ui-style.font.monospace": "JetBrainsMono Nerd Font",
+  "custom-ui-style.font.sansSerif": "JetBrainsMono Nerd Font",
   "custom-ui-style.stylesheet": {
     ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px",
     ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
@@ -32,7 +34,7 @@
   // EDITOR CUSTOMIZATION
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.hideCursorInOverviewRuler": true,
