@@ -72,6 +72,12 @@
   "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+  "workbench.statusBar.visible": false
 }

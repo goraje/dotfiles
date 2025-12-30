@@ -75,3 +75,7 @@ run = 'fullscreen'
 [[on-window-detected]]
 if.app-name-regex-substring = 'safari'
 run = 'fullscreen'
+
+[workspace-to-monitor-force-assignment]
+1 = '^AW3225QF.*$'
+2 = '^Dell AW2721D.*$'
