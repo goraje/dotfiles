@@ -24,12 +24,12 @@ set -gx LSCOLORS GxExFxgxFxDxgxFxFxGxGx
 set -gx EDITOR vim
 set -gx fish_greeting ""
 
-if status is-interactive; and command -q fzf
-    fzf --fish | source
+if status is-interactive; and command -q /opt/homebrew/bin/brew
+	/opt/homebrew/bin/brew shellenv | source
 end
 
-if status is-interactive; and command -q brew
-	brew shellenv | source
+if status is-interactive; and command -q fzf
+    fzf --fish | source
 end
 
 if status is-interactive; and command -q starship
@@ -40,7 +40,6 @@ if status is-interactive; and command -q zoxide
 	zoxide init fish | source
 end
 
-
-if status --is-interactive; and command -q fnm
+if status is-interactive; and command -q fnm
 	fnm env --use-on-cd | source
 end
