@@ -53,12 +53,27 @@ alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 alt-shift-semicolon = 'mode service'
+alt-shift-quote = 'mode finder'
+alt-shift-comma = 'mode apps'
 
 [mode.service.binding]
-esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main']
-f = ['layout floating tiling', 'mode main']
+r = ['reload-config', 'mode main']
+f = ['flatten-workspace-tree', 'mode main']
+t = ['layout floating tiling', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
+esc = ['mode main']
+
+[mode.finder.binding]
+a = ['exec-and-forget open -a Finder /Applications', 'mode main']
+d = ['exec-and-forget open -a Finder ~/Downloads', 'mode main']
+h = ['exec-and-forget open -a Finder ~', 'mode main']
+esc = ['mode main']
+
+[mode.apps.binding]
+a = ['exec-and-forget open -n /Applications/Arc.app', 'mode main']
+g = ['exec-and-forget open -n /Applications/Ghostty.app', 'mode main']
+s = ['exec-and-forget open -n /Applications/Safari.app', 'mode main']
+esc = ['mode main']
 
 [gaps]
 inner.horizontal = 20
@@ -75,6 +90,10 @@ run = 'fullscreen'
 [[on-window-detected]]
 if.app-name-regex-substring = 'safari'
 run = 'fullscreen'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'tart'
+run = 'layout floating'
 
 [workspace-to-monitor-force-assignment]
 1 = '^AW3225QF.*$'

@@ -40,6 +40,7 @@ for SRC in "$@"; do
         if [ -f "$dest_file" ]; then
             cp -p "$dest_file" "$dest_file.bkp"
             echo "Backed up: $dest_file → $dest_file.bkp"
+            rm "$dest_file"
         fi
     done
 done
